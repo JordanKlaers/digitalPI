@@ -18,7 +18,9 @@ board.on("ready", function() {
 		// do stuff with the strip here.
 		strip.off();
 		console.log('strip is on');
-		// strip.pixel(0).color("rgb(0,50,0)");
+		
+		strip.show();
+		strip.pixel(0).color("rgb(0,50,0)");
 		strip.show();
 		console.log('strip sent color');
 		
