@@ -16,6 +16,8 @@ board.on("ready", function() {
 
     strip.on("ready", function() {
         // do stuff with the strip here.
+		strip.pixel(0).color("rgb(0,5,0)");
+		
 		console.log('strip is on');
     });
 });
