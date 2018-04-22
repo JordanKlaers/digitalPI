@@ -1,6 +1,6 @@
 pixel = require("node-pixel");
 var firmata = require('firmata');
-
+console.log('process: ', process.argv);
 var board = new firmata.Board('path to usb',function(){
 console.log('board on');
     strip = new pixel.Strip({
