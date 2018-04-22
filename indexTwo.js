@@ -1,7 +1,7 @@
 pixel = require("node-pixel");
 five = require("johnny-five");
 
-var board = new five.Board(opts);
+var board = new five.Board(this);
 
 board.on("ready", function() {
     strip = new pixel.Strip({
