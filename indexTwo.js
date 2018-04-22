@@ -20,9 +20,18 @@ board.on("ready", function() {
 		console.log('strip is on');
 		
 		strip.show();
-		strip.pixel(0).color("rgb(0,50,0)");
-		strip.show();
-		console.log('strip sent color');
+		let index = 0;
+		setInterval(()=> {
+			strip.pixel(index).color("rgb(0,50,0)");
+			strip.show();
+			if (index == 143) {
+				index = 0;
+			} else {
+				index ++;
+			}
+		}, 10)
+		
+		// console.log('strip sent color');
 		
 		
     });
